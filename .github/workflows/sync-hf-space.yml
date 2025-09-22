@@ -1,0 +1,71 @@
+name: Sync with Hugging Face Space
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'huggingface_deployment/**'
+  workflow_dispatch:
+
+jobs:
+  sync-to-hf:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+        lfs: true
+
+    - name: Setup Git
+      run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "GitHub Action"
+
+    - name: Clone HF Space
+      env:
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      run: |
+        git clone https://huggingface.co/spaces/Flamehaven/rms-simulator hf-space
+
+    - name: Sync files
+      run: |
+        # Copy updated files to HF space
+        cp huggingface_deployment/app.py hf-space/
+        cp huggingface_deployment/requirements.txt hf-space/
+        cp huggingface_deployment/README.md hf-space/
+
+    - name: Commit and push to HF
+      env:
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      run: |
+        cd hf-space
+        git add .
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Auto-sync from GitHub: $(date)"
+          git push https://oauth2:$HF_TOKEN@huggingface.co/spaces/Flamehaven/rms-simulator main
+        fi
+
+  sync-from-hf:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch'
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Clone HF Space
+      run: |
+        git clone https://huggingface.co/spaces/Flamehaven/rms-simulator hf-space
+
+    - name: Sync from HF to GitHub
+      run: |
+        # Copy HF files back to GitHub
+        cp hf-space/app.py huggingface_deployment/
+        cp hf-space/requirements.txt huggingface_deployment/
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v5
+      with:
+        title: "Sync from HF Space"
+        body: "Auto-generated PR to sync changes from Hugging Face Space"
+        branch: sync-from-hf

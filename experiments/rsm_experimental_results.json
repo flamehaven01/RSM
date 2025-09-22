@@ -1,0 +1,813 @@
+{
+  "experiment_1_vme_encoding": [
+    {
+      "experiment": "VME_encoding",
+      "symbol": "The Fool",
+      "system": "tarot",
+      "vector": [
+        0.5743665268941904,
+        0.6461623427559643,
+        0.5025707110324166
+      ],
+      "norm": 0.9999999999999999,
+      "mean_component": 0.5743665268941904,
+      "std_component": 0.058621038176054956,
+      "confidence_weights": {
+        "tarot": 0.85
+      },
+      "metadata": {
+        "db_source": "Curated Tarot DB v2.2",
+        "hash": "b512e0366dec32bd298cdf35d66312a3d7aa82ff1af59e010e7033db65c6791e",
+        "timestamp": "2025-09-22T07:50:48.192444+00:00",
+        "platform_info": {
+          "platform": "Windows-11-10.0.26100-SP0",
+          "python_version": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+          "numpy_version": "2.2.6",
+          "architecture": "64bit",
+          "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel"
+        }
+      }
+    },
+    {
+      "experiment": "VME_encoding",
+      "symbol": "Death",
+      "system": "tarot",
+      "vector": [
+        0.4436069753671345,
+        0.6337242505244779,
+        0.6337242505244779
+      ],
+      "norm": 1.0,
+      "mean_component": 0.57035182547203,
+      "std_component": 0.08962214298964417,
+      "confidence_weights": {
+        "tarot": 0.95
+      },
+      "metadata": {
+        "db_source": "Curated Tarot DB v2.2",
+        "hash": "18bce52217af437e99b2cdc292226a0e829a971dd3d2afd693933aeeb91b10ec",
+        "timestamp": "2025-09-22T07:50:48.538748+00:00",
+        "platform_info": {
+          "platform": "Windows-11-10.0.26100-SP0",
+          "python_version": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+          "numpy_version": "2.2.6",
+          "architecture": "64bit",
+          "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel"
+        }
+      }
+    },
+    {
+      "experiment": "VME_encoding",
+      "symbol": "Fire Yang",
+      "system": "saju",
+      "vector": [
+        0.5946353169977331,
+        0.44597648774829973,
+        0.6689647316224496
+      ],
+      "norm": 0.9999999999999999,
+      "mean_component": 0.5698588454561608,
+      "std_component": 0.09270506776171801,
+      "confidence_weights": {
+        "saju": 0.9
+      },
+      "metadata": {
+        "db_source": "Curated Saju DB v2.2",
+        "hash": "616ba9e52a25551c7b1ee38dcb691d796e59e6334307d50adf449ff8a7b32b77",
+        "timestamp": "2025-09-22T07:50:48.538748+00:00",
+        "platform_info": {
+          "platform": "Windows-11-10.0.26100-SP0",
+          "python_version": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+          "numpy_version": "2.2.6",
+          "architecture": "64bit",
+          "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel"
+        }
+      }
+    },
+    {
+      "experiment": "VME_encoding",
+      "symbol": "Water Yang",
+      "system": "saju",
+      "vector": [
+        0.45267873021259264,
+        0.8148217143826668,
+        0.3621429841700741
+      ],
+      "norm": 1.0,
+      "mean_component": 0.5432144762551111,
+      "std_component": 0.19557956467948942,
+      "confidence_weights": {
+        "saju": 0.85
+      },
+      "metadata": {
+        "db_source": "Curated Saju DB v2.2",
+        "hash": "7605c48257a6f606d7f6f7ec2e0a08c49fd97bfdaf88534cd02586cbb6ca7fcd",
+        "timestamp": "2025-09-22T07:50:48.539758+00:00",
+        "platform_info": {
+          "platform": "Windows-11-10.0.26100-SP0",
+          "python_version": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+          "numpy_version": "2.2.6",
+          "architecture": "64bit",
+          "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel"
+        }
+      }
+    },
+    {
+      "experiment": "VME_encoding",
+      "symbol": "Aries",
+      "system": "astrology",
+      "vector": [
+        0.6461623427559643,
+        0.5743665268941904,
+        0.5025707110324166
+      ],
+      "norm": 0.9999999999999999,
+      "mean_component": 0.5743665268941904,
+      "std_component": 0.058621038176054956,
+      "confidence_weights": {
+        "astrology": 0.85
+      },
+      "metadata": {
+        "db_source": "Curated Astrology DB v2.2",
+        "hash": "0f26cf9c46457ad6aaadf0eb9b64706e2d5a56112391bbfbf6f9cc8dbe00558c",
+        "timestamp": "2025-09-22T07:50:48.539758+00:00",
+        "platform_info": {
+          "platform": "Windows-11-10.0.26100-SP0",
+          "python_version": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+          "numpy_version": "2.2.6",
+          "architecture": "64bit",
+          "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel"
+        }
+      }
+    },
+    {
+      "experiment": "VME_encoding",
+      "symbol": "Scorpio",
+      "system": "astrology",
+      "vector": [
+        0.49236596391733095,
+        0.6154574548966637,
+        0.6154574548966637
+      ],
+      "norm": 1.0,
+      "mean_component": 0.5744269579035528,
+      "std_component": 0.05802588531856595,
+      "confidence_weights": {
+        "astrology": 0.9
+      },
+      "metadata": {
+        "db_source": "Curated Astrology DB v2.2",
+        "hash": "9f35977322059757458f251f4632b1ef32e936a86fa89b2b5becb5df9ebeab43",
+        "timestamp": "2025-09-22T07:50:48.540794+00:00",
+        "platform_info": {
+          "platform": "Windows-11-10.0.26100-SP0",
+          "python_version": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+          "numpy_version": "2.2.6",
+          "architecture": "64bit",
+          "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel"
+        }
+      }
+    }
+  ],
+  "experiment_2_ri_calibration": [
+    {
+      "experiment": "RI_calibration",
+      "symbol": "The Fool",
+      "context": "Aries",
+      "ri_value": 0.972393280078748,
+      "expert_label": 0.85,
+      "absolute_error": 0.12239328007874806,
+      "false_alignment_event": false,
+      "thresholds": {
+        "tau_plus": 0.7,
+        "tau_minus": 0.3
+      },
+      "penalty_params": {
+        "lambda": 0.1,
+        "alpha": 1.0,
+        "beta": 1.0
+      },
+      "metadata": {
+        "fold": "validation_1",
+        "platform": "Windows",
+        "hash": "ce3c53363f752db36a08750170da5c9d6c9b22ada659791721a3f7e69a43aff6",
+        "timestamp": "2025-09-22T07:50:48.540794+00:00"
+      }
+    },
+    {
+      "experiment": "RI_calibration",
+      "symbol": "Death",
+      "context": "Scorpio",
+      "ri_value": 0.9496696824242521,
+      "expert_label": 0.95,
+      "absolute_error": 0.0003303175757478627,
+      "false_alignment_event": false,
+      "thresholds": {
+        "tau_plus": 0.7,
+        "tau_minus": 0.3
+      },
+      "penalty_params": {
+        "lambda": 0.1,
+        "alpha": 1.0,
+        "beta": 1.0
+      },
+      "metadata": {
+        "fold": "validation_1",
+        "platform": "Windows",
+        "hash": "d16b4e6aabbc34c4430b44c00adba97700ed9cb9b649635aef93c097dd940108",
+        "timestamp": "2025-09-22T07:50:48.540794+00:00"
+      }
+    },
+    {
+      "experiment": "RI_calibration",
+      "symbol": "The Magician",
+      "context": "Leo",
+      "ri_value": 0.8854380495571141,
+      "expert_label": 0.75,
+      "absolute_error": 0.13543804955711414,
+      "false_alignment_event": false,
+      "thresholds": {
+        "tau_plus": 0.7,
+        "tau_minus": 0.3
+      },
+      "penalty_params": {
+        "lambda": 0.1,
+        "alpha": 1.0,
+        "beta": 1.0
+      },
+      "metadata": {
+        "fold": "validation_1",
+        "platform": "Windows",
+        "hash": "a444cb72c041fc842f8fcfab7a20a8282443ddd051530e9e9156a2764693e26f",
+        "timestamp": "2025-09-22T07:50:48.541794+00:00"
+      }
+    },
+    {
+      "experiment": "RI_calibration",
+      "symbol": "The Tower",
+      "context": "Aries",
+      "ri_value": 0.9554780604998483,
+      "expert_label": 0.8,
+      "absolute_error": 0.15547806049984825,
+      "false_alignment_event": false,
+      "thresholds": {
+        "tau_plus": 0.7,
+        "tau_minus": 0.3
+      },
+      "penalty_params": {
+        "lambda": 0.1,
+        "alpha": 1.0,
+        "beta": 1.0
+      },
+      "metadata": {
+        "fold": "validation_1",
+        "platform": "Windows",
+        "hash": "d561ce1e7a034810843430c3ad6aa2fb4a359a45a1951414ca5bb251f9031c10",
+        "timestamp": "2025-09-22T07:50:48.541794+00:00"
+      }
+    },
+    {
+      "experiment": "RI_calibration",
+      "symbol": "The High Priestess",
+      "context": "Cancer",
+      "ri_value": 0.8005602572489056,
+      "expert_label": 0.7,
+      "absolute_error": 0.1005602572489056,
+      "false_alignment_event": false,
+      "thresholds": {
+        "tau_plus": 0.7,
+        "tau_minus": 0.3
+      },
+      "penalty_params": {
+        "lambda": 0.1,
+        "alpha": 1.0,
+        "beta": 1.0
+      },
+      "metadata": {
+        "fold": "validation_1",
+        "platform": "Windows",
+        "hash": "53df6c3fa7fc25ebe49ede691feadadb73cd8c57398115d4b7da50542fa831dc",
+        "timestamp": "2025-09-22T07:50:48.541794+00:00"
+      }
+    },
+    {
+      "experiment": "RI_calibration",
+      "symbol": "Fire Yang",
+      "context": "Leo",
+      "ri_value": 0.9577681943098453,
+      "expert_label": 0.9,
+      "absolute_error": 0.057768194309845255,
+      "false_alignment_event": false,
+      "thresholds": {
+        "tau_plus": 0.7,
+        "tau_minus": 0.3
+      },
+      "penalty_params": {
+        "lambda": 0.1,
+        "alpha": 1.0,
+        "beta": 1.0
+      },
+      "metadata": {
+        "fold": "validation_1",
+        "platform": "Windows",
+        "hash": "1f9513d54597667c70ad440995be3806322a99a6b6b1fda3e00adb29761213bd",
+        "timestamp": "2025-09-22T07:50:48.541794+00:00"
+      }
+    },
+    {
+      "experiment": "RI_calibration",
+      "symbol": "Water Yang",
+      "context": "Cancer",
+      "ri_value": 0.8495810675423833,
+      "expert_label": 0.85,
+      "absolute_error": 0.0004189324576167053,
+      "false_alignment_event": false,
+      "thresholds": {
+        "tau_plus": 0.7,
+        "tau_minus": 0.3
+      },
+      "penalty_params": {
+        "lambda": 0.1,
+        "alpha": 1.0,
+        "beta": 1.0
+      },
+      "metadata": {
+        "fold": "validation_1",
+        "platform": "Windows",
+        "hash": "85f0335a7a473c6849b398ec37c90987408cdb8697c0761d172e33349dcd13e7",
+        "timestamp": "2025-09-22T07:50:48.541794+00:00"
+      }
+    },
+    {
+      "experiment": "RI_calibration",
+      "symbol": "Wood Yang",
+      "context": "Aries",
+      "ri_value": 0.9653364982028986,
+      "expert_label": 0.65,
+      "absolute_error": 0.31533649820289855,
+      "false_alignment_event": false,
+      "thresholds": {
+        "tau_plus": 0.7,
+        "tau_minus": 0.3
+      },
+      "penalty_params": {
+        "lambda": 0.1,
+        "alpha": 1.0,
+        "beta": 1.0
+      },
+      "metadata": {
+        "fold": "validation_1",
+        "platform": "Windows",
+        "hash": "65d934ee4ab1d4b9c6350425ee3038e868f0d33dde5f5fae68786691a13ccf1c",
+        "timestamp": "2025-09-22T07:50:48.541794+00:00"
+      }
+    },
+    {
+      "experiment": "RI_calibration",
+      "symbol": "Metal Yin",
+      "context": "Taurus",
+      "ri_value": 0.8909592999014265,
+      "expert_label": 0.6,
+      "absolute_error": 0.29095929990142655,
+      "false_alignment_event": false,
+      "thresholds": {
+        "tau_plus": 0.7,
+        "tau_minus": 0.3
+      },
+      "penalty_params": {
+        "lambda": 0.1,
+        "alpha": 1.0,
+        "beta": 1.0
+      },
+      "metadata": {
+        "fold": "validation_1",
+        "platform": "Windows",
+        "hash": "6288f625d90cd468c03458ea7a9581d9b7fae015ed3ef6e1a5aa00ed3ad40726",
+        "timestamp": "2025-09-22T07:50:48.542789+00:00"
+      }
+    },
+    {
+      "experiment": "RI_calibration",
+      "symbol": "Earth Yang",
+      "context": "Taurus",
+      "ri_value": 0.897465076046458,
+      "expert_label": 0.88,
+      "absolute_error": 0.017465076046457972,
+      "false_alignment_event": false,
+      "thresholds": {
+        "tau_plus": 0.7,
+        "tau_minus": 0.3
+      },
+      "penalty_params": {
+        "lambda": 0.1,
+        "alpha": 1.0,
+        "beta": 1.0
+      },
+      "metadata": {
+        "fold": "validation_1",
+        "platform": "Windows",
+        "hash": "a24fc34730564881fdbf8c3586a731562be9de9feedff8a34675892c6e5b880e",
+        "timestamp": "2025-09-22T07:50:48.542789+00:00"
+      }
+    },
+    {
+      "experiment": "RI_calibration_summary",
+      "mean_absolute_error": 0.1196147965878609,
+      "std_absolute_error": 0.10595719718391278,
+      "false_alignment_rate": 0.0,
+      "meets_criteria": true,
+      "n_samples": 10,
+      "metadata": {
+        "timestamp": "2025-09-22T07:50:48.543945+00:00",
+        "hash": "a6b33d0227016a88926722d8c37e6b03c0c1c8b26f03171651817123494a841e"
+      }
+    }
+  ],
+  "experiment_3_drift_sentinel": [
+    {
+      "experiment": "DriftSentinel_monitoring",
+      "series_id": "stable_series",
+      "ri_series": [
+        0.75,
+        0.76,
+        0.74,
+        0.77,
+        0.75,
+        0.76
+      ],
+      "DI2": 0.00038000000000000067,
+      "status": "STABLE",
+      "trajectory_analysis": {
+        "di2_trend": "decreasing",
+        "ri_trend": "decreasing",
+        "stability": "stable",
+        "di2_volatility": 0.0,
+        "ri_volatility": 0.013489469434247201
+      },
+      "thresholds": {
+        "tau_w": 0.2,
+        "tau_c": 0.3,
+        "rho_w": 0.4,
+        "rho_c": 0.2
+      },
+      "metadata": {
+        "time_span": "2025-01-01 to 2025-09-22",
+        "n_steps": 6,
+        "hash": "f2a9d5fa9d33bd0d7d16f87a18d1f12411de3450f568ec8f14fd16425e400dd1",
+        "timestamp": "2025-09-22T07:50:48.543945+00:00"
+      }
+    },
+    {
+      "experiment": "DriftSentinel_monitoring",
+      "series_id": "warning_drift",
+      "ri_series": [
+        0.7,
+        0.65,
+        0.6,
+        0.45,
+        0.4,
+        0.35
+      ],
+      "DI2": 0.006499999999999997,
+      "status": "WARNING",
+      "trajectory_analysis": {
+        "di2_trend": "decreasing",
+        "ri_trend": "decreasing",
+        "stability": "volatile",
+        "di2_volatility": 0.0,
+        "ri_volatility": 0.23624156462344204
+      },
+      "thresholds": {
+        "tau_w": 0.2,
+        "tau_c": 0.3,
+        "rho_w": 0.4,
+        "rho_c": 0.2
+      },
+      "metadata": {
+        "time_span": "2025-01-01 to 2025-09-22",
+        "n_steps": 6,
+        "hash": "acd02fed1ff5ca79e013c69780fcf4e4b0560d30f2e2ab853912fbf1741c032c",
+        "timestamp": "2025-09-22T07:50:48.544956+00:00"
+      }
+    },
+    {
+      "experiment": "DriftSentinel_monitoring",
+      "series_id": "critical_drift",
+      "ri_series": [
+        0.8,
+        0.65,
+        0.3,
+        0.15,
+        0.1,
+        0.05
+      ],
+      "DI2": 0.0345,
+      "status": "CRITICAL",
+      "trajectory_analysis": {
+        "di2_trend": "decreasing",
+        "ri_trend": "decreasing",
+        "stability": "volatile",
+        "di2_volatility": 0.0,
+        "ri_volatility": 0.8671793008599801
+      },
+      "thresholds": {
+        "tau_w": 0.2,
+        "tau_c": 0.3,
+        "rho_w": 0.4,
+        "rho_c": 0.2
+      },
+      "metadata": {
+        "time_span": "2025-01-01 to 2025-09-22",
+        "n_steps": 6,
+        "hash": "9052ec42436351f294bcc5bafc5a16c5358d0a1f70fc192e072f4f6b4610400b",
+        "timestamp": "2025-09-22T07:50:48.544956+00:00"
+      }
+    },
+    {
+      "experiment": "DriftSentinel_monitoring",
+      "series_id": "recovery_pattern",
+      "ri_series": [
+        0.3,
+        0.45,
+        0.6,
+        0.7,
+        0.75,
+        0.8
+      ],
+      "DI2": 0.012,
+      "status": "STABLE",
+      "trajectory_analysis": {
+        "di2_trend": "decreasing",
+        "ri_trend": "increasing",
+        "stability": "stable",
+        "di2_volatility": 0.0,
+        "ri_volatility": 0.18802535542371973
+      },
+      "thresholds": {
+        "tau_w": 0.2,
+        "tau_c": 0.3,
+        "rho_w": 0.4,
+        "rho_c": 0.2
+      },
+      "metadata": {
+        "time_span": "2025-01-01 to 2025-09-22",
+        "n_steps": 6,
+        "hash": "02c8625e6e4e35f246b841028e70ab90bf917d322e773b435ff880f55618706c",
+        "timestamp": "2025-09-22T07:50:48.544956+00:00"
+      }
+    },
+    {
+      "experiment": "DriftSentinel_summary",
+      "di2_mean": 0.013345,
+      "di2_std": 0.012886895475637258,
+      "status_distribution": {
+        "STABLE": 2,
+        "WARNING": 1,
+        "CRITICAL": 1
+      },
+      "n_series": 4,
+      "metadata": {
+        "timestamp": "2025-09-22T07:50:48.544956+00:00",
+        "hash": "469ccbe3fa8a4413e5697805895bc2ec97234c963a108346e653b9795ffddc3b"
+      }
+    }
+  ],
+  "experiment_4_lawbinder_resolution": [
+    {
+      "experiment": "LawBinder_resolution",
+      "case_id": "Death_Scorpio_FireYang",
+      "strategy": "harmonize",
+      "input_vectors": [
+        [
+          0.4436069753671345,
+          0.6337242505244779,
+          0.6337242505244779
+        ],
+        [
+          0.49236596391733095,
+          0.6154574548966637,
+          0.6154574548966637
+        ],
+        [
+          0.5946353169977331,
+          0.44597648774829973,
+          0.6689647316224496
+        ]
+      ],
+      "weights": [
+        0.4,
+        0.4,
+        0.2
+      ],
+      "resolved_vector": [
+        0.4954500025643806,
+        0.5914150375138894,
+        0.6362055865531205
+      ],
+      "individual_ris": [
+        0.9365466756147304,
+        0.9617019737617624,
+        0.9335072949428155
+      ],
+      "resolved_ri": 0.9590508098933723,
+      "delta_var": 0.006668644643806165,
+      "delta_ri": 0.015132161786936216,
+      "semantic_coherence_gain": 0.7873642184718754,
+      "metadata": {
+        "conflict_case": "Death_Scorpio_FireYang",
+        "raters": 3,
+        "kripp_alpha": 0.81,
+        "hash": "6b244d926fb5d7c03d3ba4cfd9ef619b43705579135f662123e0a2a07efd9ab5",
+        "timestamp": "2025-09-22T07:50:48.548113+00:00"
+      }
+    },
+    {
+      "experiment": "LawBinder_resolution",
+      "case_id": "Fool_Aries_WoodYang",
+      "strategy": "prioritize",
+      "input_vectors": [
+        [
+          0.5743665268941904,
+          0.6461623427559643,
+          0.5025707110324166
+        ],
+        [
+          0.6461623427559643,
+          0.5743665268941904,
+          0.5025707110324166
+        ],
+        [
+          0.3521803625302496,
+          0.7043607250604992,
+          0.6163156344279367
+        ]
+      ],
+      "weights": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "resolved_vector": [
+        0.5743665268941904,
+        0.6461623427559643,
+        0.5025707110324166
+      ],
+      "individual_ris": [
+        0.9610879732925801,
+        0.9596520569753446,
+        0.872496482702647
+      ],
+      "resolved_ri": 0.9610879732925801,
+      "delta_var": 0.009818109417202651,
+      "delta_ri": 0.03000913563572294,
+      "semantic_coherence_gain": 0.7585718718911629,
+      "metadata": {
+        "conflict_case": "Fool_Aries_WoodYang",
+        "raters": 3,
+        "kripp_alpha": 0.81,
+        "hash": "8bd83b67416e9b4b60d87fe980f204a7f056493edbd1c35cc0ee1b42b4045943",
+        "timestamp": "2025-09-22T07:50:48.551153+00:00"
+      }
+    },
+    {
+      "experiment": "LawBinder_resolution",
+      "case_id": "Magician_Leo_MetalYin",
+      "strategy": "contextualize",
+      "input_vectors": [
+        [
+          0.26726124191242434,
+          0.5345224838248487,
+          0.8017837257372732
+        ],
+        [
+          0.49153915231142425,
+          0.5734623443633283,
+          0.6553855364152325
+        ],
+        [
+          0.457495710997814,
+          0.457495710997814,
+          0.7624928516630234
+        ]
+      ],
+      "weights": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "resolved_vector": [
+        0.3757839680230711,
+        0.5353471095199116,
+        0.7564323378237549
+      ],
+      "individual_ris": [
+        0.7948620912354635,
+        0.9531235525594115,
+        0.9013966260118402
+      ],
+      "resolved_ri": 0.8710473883217653,
+      "delta_var": 0.02451370799682654,
+      "delta_ri": -0.012080034947139828,
+      "semantic_coherence_gain": 0.7341112282618416,
+      "metadata": {
+        "conflict_case": "Magician_Leo_MetalYin",
+        "raters": 3,
+        "kripp_alpha": 0.81,
+        "hash": "c55594a615af69a3e0378ed784c3910fb5eeaa0607490e5d1783c25a1953b3c8",
+        "timestamp": "2025-09-22T07:50:48.552064+00:00"
+      }
+    },
+    {
+      "experiment": "LawBinder_summary",
+      "mean_delta_ri": 0.011020420825173108,
+      "mean_delta_var": 0.013666820685945118,
+      "mean_scg": 0.76001577287496,
+      "n_cases": 3,
+      "metadata": {
+        "timestamp": "2025-09-22T07:50:48.553042+00:00",
+        "hash": "b9a2e3ea49d46e551f28e9d4d936f3b696fa2f548aacd81bb2f0ede98a13e588"
+      }
+    }
+  ],
+  "experiment_5_reproducibility": [
+    {
+      "experiment": "reproducibility_check",
+      "module": "VME",
+      "input_hash": "67c21a1021f401a50db73bb62e198bd872c7ab050464035894061dce80ec26dc",
+      "output_hash": "cbffd3df7dfedd0cccad5dd85615042c151af46a822c8d10a78b1b4a9c65e002",
+      "match": true,
+      "delta": 0.0,
+      "platform": "Windows",
+      "metadata": {
+        "python_version": "3.12.5",
+        "numpy_version": "2.2.6",
+        "timestamp": "2025-09-22T07:50:48.555039+00:00",
+        "run_id": "6a81de78331504973d8c5a27d15378480512d334a3452817d348beca73f9d9bd"
+      }
+    },
+    {
+      "experiment": "reproducibility_check",
+      "module": "RI",
+      "input_hash": "0a427cece80b6ce6d9e6eb6ffa594188b24fe86094161dd58fc777a3e3cdbb8d",
+      "output_hash": "a8bc77ce7ce0147a8e03c950f23cebfb19a339cd3fe1f0724f7b5d13d109b71f",
+      "match": true,
+      "delta": 0.0,
+      "platform": "Windows",
+      "metadata": {
+        "python_version": "3.12.5",
+        "numpy_version": "2.2.6",
+        "timestamp": "2025-09-22T07:50:48.555039+00:00",
+        "run_id": "a52a90652b4b9f8ffdfdd8dbe2661a99db7cc9218f55678baa3fb3cb6b09a1cc"
+      }
+    },
+    {
+      "experiment": "reproducibility_check",
+      "module": "DriftSentinel",
+      "input_hash": "3f96df48e44167b79b63744472ed1a1a3e395d12ac5612b6ca7d6ed16e7a73ee",
+      "output_hash": "b5c7a150d02feb6f2d34b36d50613479e986911768a6d18f55f3a865e86a21ac",
+      "match": true,
+      "delta": 0.0,
+      "platform": "Windows",
+      "metadata": {
+        "python_version": "3.12.5",
+        "numpy_version": "2.2.6",
+        "timestamp": "2025-09-22T07:50:48.555039+00:00",
+        "run_id": "13c535c051a33d0d6cf1d0969e43ab45d8db1721e9312873ef8deef51f7c070f"
+      }
+    },
+    {
+      "experiment": "reproducibility_summary",
+      "all_tests_passed": true,
+      "max_delta": 0.0,
+      "meets_criteria": true,
+      "platform_info": {
+        "platform": "Windows-11-10.0.26100-SP0",
+        "python_version": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+        "numpy_version": "2.2.6",
+        "architecture": "64bit",
+        "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel"
+      },
+      "n_tests": 3,
+      "metadata": {
+        "timestamp": "2025-09-22T07:50:48.556042+00:00",
+        "hash": "6fb086d658332a43050dd1aed9319ebcd7f90fd0b8be7a458b4969662d073664"
+      }
+    }
+  ],
+  "experimental_metadata": [
+    {
+      "suite_version": "RSM_v2.2",
+      "total_experiments": 5,
+      "total_test_cases": 30,
+      "execution_platform": {
+        "platform": "Windows-11-10.0.26100-SP0",
+        "python_version": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+        "numpy_version": "2.2.6",
+        "architecture": "64bit",
+        "processor": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel"
+      },
+      "execution_timestamp": "2025-09-22T07:50:48.556042+00:00",
+      "suite_hash": "91126a022d6a58789e78a1ceb7f1c107eed8c57540f2d96341a08749e962f746"
+    }
+  ]
+}

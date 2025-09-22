@@ -1,0 +1,100 @@
+{
+  "Aries": {
+    "dimensions": {
+      "chaos": 0.9,
+      "rebirth": 0.8,
+      "transformation": 0.7
+    },
+    "metadata": {
+      "element": "Fire",
+      "modality": "Cardinal",
+      "ruling_planet": "Mars",
+      "confidence_level": 0.85,
+      "cultural_origin": "Western Astrological"
+    }
+  },
+  "Taurus": {
+    "dimensions": {
+      "chaos": 0.2,
+      "rebirth": 0.3,
+      "transformation": 0.4
+    },
+    "metadata": {
+      "element": "Earth",
+      "modality": "Fixed",
+      "ruling_planet": "Venus",
+      "confidence_level": 0.8,
+      "cultural_origin": "Western Astrological"
+    }
+  },
+  "Gemini": {
+    "dimensions": {
+      "chaos": 0.7,
+      "rebirth": 0.6,
+      "transformation": 0.8
+    },
+    "metadata": {
+      "element": "Air",
+      "modality": "Mutable",
+      "ruling_planet": "Mercury",
+      "confidence_level": 0.75,
+      "cultural_origin": "Western Astrological"
+    }
+  },
+  "Cancer": {
+    "dimensions": {
+      "chaos": 0.4,
+      "rebirth": 0.9,
+      "transformation": 0.6
+    },
+    "metadata": {
+      "element": "Water",
+      "modality": "Cardinal",
+      "ruling_planet": "Moon",
+      "confidence_level": 0.8,
+      "cultural_origin": "Western Astrological"
+    }
+  },
+  "Leo": {
+    "dimensions": {
+      "chaos": 0.6,
+      "rebirth": 0.7,
+      "transformation": 0.8
+    },
+    "metadata": {
+      "element": "Fire",
+      "modality": "Fixed",
+      "ruling_planet": "Sun",
+      "confidence_level": 0.85,
+      "cultural_origin": "Western Astrological"
+    }
+  },
+  "Scorpio": {
+    "dimensions": {
+      "chaos": 0.8,
+      "rebirth": 1.0,
+      "transformation": 1.0
+    },
+    "metadata": {
+      "element": "Water",
+      "modality": "Fixed",
+      "ruling_planet": "Pluto",
+      "confidence_level": 0.9,
+      "cultural_origin": "Western Astrological"
+    }
+  },
+  "Pisces": {
+    "dimensions": {
+      "chaos": 0.5,
+      "rebirth": 0.8,
+      "transformation": 0.7
+    },
+    "metadata": {
+      "element": "Water",
+      "modality": "Mutable",
+      "ruling_planet": "Neptune",
+      "confidence_level": 0.7,
+      "cultural_origin": "Western Astrological"
+    }
+  }
+}

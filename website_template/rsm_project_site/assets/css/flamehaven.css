@@ -1,0 +1,503 @@
+/* Flamehaven Brand CSS - Academic Research Design System */
+
+:root {
+    /* Flamehaven Brand Colors */
+    --flamehaven-primary: #FF6B35;
+    --flamehaven-secondary: #1A1A2E;
+    --flamehaven-accent: #16213E;
+    --flamehaven-light: #EAEAEA;
+    --flamehaven-text: #2C2C2C;
+    --flamehaven-white: #FFFFFF;
+
+    /* Academic Colors */
+    --academic-blue: #0066CC;
+    --academic-green: #28A745;
+    --academic-orange: #FD7E14;
+    --academic-red: #DC3545;
+
+    /* Gradients */
+    --flamehaven-gradient: linear-gradient(135deg, #FF6B35 0%, #16213E 100%);
+    --academic-gradient: linear-gradient(135deg, #0066CC 0%, #16213E 100%);
+
+    /* Typography */
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-academic: 'Source Serif Pro', Georgia, serif;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 4rem;
+
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+    --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.2);
+}
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--flamehaven-text);
+    line-height: 1.6;
+    font-size: 16px;
+    background-color: var(--flamehaven-white);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    color: var(--flamehaven-secondary);
+}
+
+h1 { font-size: 2.5rem; line-height: 1.2; }
+h2 { font-size: 2rem; line-height: 1.3; }
+h3 { font-size: 1.5rem; line-height: 1.4; }
+h4 { font-size: 1.25rem; line-height: 1.4; }
+
+.flamehaven-title {
+    color: var(--flamehaven-primary);
+    font-weight: 700;
+}
+
+.academic-text {
+    font-family: var(--font-academic);
+    line-height: 1.7;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.academic-text p {
+    margin-bottom: var(--spacing-md);
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* Header */
+.flamehaven-header {
+    background: var(--flamehaven-white);
+    border-bottom: 1px solid var(--flamehaven-light);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-sm) 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.logo img {
+    height: 32px;
+    width: auto;
+}
+
+.logo-text {
+    font-weight: 600;
+    color: var(--flamehaven-secondary);
+    font-size: 1.1rem;
+}
+
+.main-nav {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--flamehaven-text);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.main-nav a:hover {
+    color: var(--flamehaven-primary);
+}
+
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--flamehaven-primary);
+    transition: width 0.3s ease;
+}
+
+.main-nav a:hover::after {
+    width: 100%;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    border-radius: var(--radius-md);
+    font-family: var(--font-primary);
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background: var(--flamehaven-primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #e55a2b;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+    background: var(--flamehaven-secondary);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #151221;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--flamehaven-secondary);
+    border: 2px solid var(--flamehaven-secondary);
+}
+
+.btn-outline:hover {
+    background: var(--flamehaven-secondary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-outline-sm {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 0.9rem;
+    border: 1px solid var(--flamehaven-secondary);
+}
+
+.btn-sm {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 0.9rem;
+}
+
+/* Hero Section */
+.hero {
+    background: var(--flamehaven-gradient);
+    color: white;
+    padding: var(--spacing-xxl) 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle cx="500" cy="500" r="300" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><circle cx="500" cy="500" r="200" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></svg>');
+    background-size: 800px 800px;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.paper-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    background: rgba(255, 255, 255, 0.1);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-md);
+    backdrop-filter: blur(10px);
+}
+
+.badge-text {
+    font-weight: 500;
+}
+
+.badge-status {
+    background: var(--academic-green);
+    color: white;
+    padding: 2px 8px;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.badge-status.published { background: var(--academic-green); }
+.badge-status.preprint { background: var(--academic-orange); }
+.badge-status.in-progress { background: var(--academic-blue); }
+
+.paper-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    line-height: 1.1;
+}
+
+.title-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+}
+
+.authors {
+    margin-bottom: var(--spacing-md);
+}
+
+.author {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.flamehaven-author {
+    color: white;
+}
+
+.affiliation {
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    margin-top: var(--spacing-xs);
+}
+
+.paper-meta {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.action-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    margin-bottom: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+
+.stats-row {
+    display: flex;
+    gap: var(--spacing-xl);
+    justify-content: center;
+    margin-top: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat .number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.stat .label {
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-top: var(--spacing-xs);
+}
+
+/* Sections */
+.section {
+    padding: var(--spacing-xxl) 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    color: var(--flamehaven-secondary);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--flamehaven-text);
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-xl);
+    opacity: 0.8;
+}
+
+/* Status badges */
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-badge.success {
+    background: rgba(40, 167, 69, 0.1);
+    color: var(--academic-green);
+}
+
+.status-badge.info {
+    background: rgba(0, 102, 204, 0.1);
+    color: var(--academic-blue);
+}
+
+.status-badge.warning {
+    background: rgba(253, 126, 20, 0.1);
+    color: var(--academic-orange);
+}
+
+/* Footer */
+.flamehaven-footer {
+    background: var(--flamehaven-secondary);
+    color: white;
+    padding: var(--spacing-xl) 0 var(--spacing-lg);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+}
+
+.footer-section h4 {
+    color: white;
+    margin-bottom: var(--spacing-md);
+    font-size: 1.1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer-section ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: var(--flamehaven-primary);
+}
+
+.footer-logo {
+    height: 40px;
+    margin-bottom: var(--spacing-md);
+}
+
+.social-links {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.social-links a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--flamehaven-primary);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--spacing-md);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .main-nav {
+        gap: var(--spacing-md);
+    }
+
+    .paper-title {
+        font-size: 2rem;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats-row {
+        gap: var(--spacing-lg);
+    }
+
+    .paper-meta {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+}

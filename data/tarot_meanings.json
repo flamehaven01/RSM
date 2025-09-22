@@ -1,0 +1,79 @@
+{
+  "The Fool": {
+    "dimensions": {
+      "chaos": 0.8,
+      "rebirth": 0.9,
+      "transformation": 0.7
+    },
+    "metadata": {
+      "element": "Air",
+      "number": 0,
+      "confidence_level": 0.85,
+      "cultural_origin": "Western Hermetic",
+      "interpretation_notes": "New beginnings, spontaneity, infinite potential"
+    },
+    "contextual_modifiers": {
+      "reversed": {
+        "chaos": 0.9,
+        "rebirth": 0.3,
+        "transformation": 0.2
+      }
+    }
+  },
+  "The Magician": {
+    "dimensions": {
+      "chaos": 0.3,
+      "rebirth": 0.6,
+      "transformation": 0.9
+    },
+    "metadata": {
+      "element": "Air",
+      "number": 1,
+      "confidence_level": 0.9,
+      "cultural_origin": "Western Hermetic",
+      "interpretation_notes": "Manifestation, willpower, skill"
+    }
+  },
+  "The High Priestess": {
+    "dimensions": {
+      "chaos": 0.2,
+      "rebirth": 0.8,
+      "transformation": 0.6
+    },
+    "metadata": {
+      "element": "Water",
+      "number": 2,
+      "confidence_level": 0.8,
+      "cultural_origin": "Western Hermetic",
+      "interpretation_notes": "Intuition, mystery, inner wisdom"
+    }
+  },
+  "Death": {
+    "dimensions": {
+      "chaos": 0.7,
+      "rebirth": 1.0,
+      "transformation": 1.0
+    },
+    "metadata": {
+      "element": "Water",
+      "number": 13,
+      "confidence_level": 0.95,
+      "cultural_origin": "Western Hermetic",
+      "interpretation_notes": "Endings, transformation, renewal"
+    }
+  },
+  "The Tower": {
+    "dimensions": {
+      "chaos": 1.0,
+      "rebirth": 0.7,
+      "transformation": 0.8
+    },
+    "metadata": {
+      "element": "Fire",
+      "number": 16,
+      "confidence_level": 0.9,
+      "cultural_origin": "Western Hermetic",
+      "interpretation_notes": "Sudden change, upheaval, revelation"
+    }
+  }
+}

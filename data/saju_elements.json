@@ -1,0 +1,100 @@
+{
+  "Wood Yang": {
+    "dimensions": {
+      "chaos": 0.4,
+      "rebirth": 0.8,
+      "transformation": 0.7
+    },
+    "metadata": {
+      "element": "Wood",
+      "polarity": "Yang",
+      "seasonal_association": "Spring",
+      "confidence_level": 0.85,
+      "cultural_origin": "Traditional Chinese"
+    }
+  },
+  "Wood Yin": {
+    "dimensions": {
+      "chaos": 0.3,
+      "rebirth": 0.7,
+      "transformation": 0.6
+    },
+    "metadata": {
+      "element": "Wood",
+      "polarity": "Yin",
+      "seasonal_association": "Spring",
+      "confidence_level": 0.85,
+      "cultural_origin": "Traditional Chinese"
+    }
+  },
+  "Fire Yang": {
+    "dimensions": {
+      "chaos": 0.8,
+      "rebirth": 0.6,
+      "transformation": 0.9
+    },
+    "metadata": {
+      "element": "Fire",
+      "polarity": "Yang",
+      "seasonal_association": "Summer",
+      "confidence_level": 0.9,
+      "cultural_origin": "Traditional Chinese"
+    }
+  },
+  "Fire Yin": {
+    "dimensions": {
+      "chaos": 0.6,
+      "rebirth": 0.5,
+      "transformation": 0.7
+    },
+    "metadata": {
+      "element": "Fire",
+      "polarity": "Yin",
+      "seasonal_association": "Summer",
+      "confidence_level": 0.9,
+      "cultural_origin": "Traditional Chinese"
+    }
+  },
+  "Earth Yang": {
+    "dimensions": {
+      "chaos": 0.2,
+      "rebirth": 0.4,
+      "transformation": 0.3
+    },
+    "metadata": {
+      "element": "Earth",
+      "polarity": "Yang",
+      "seasonal_association": "Late Summer",
+      "confidence_level": 0.8,
+      "cultural_origin": "Traditional Chinese"
+    }
+  },
+  "Metal Yin": {
+    "dimensions": {
+      "chaos": 0.3,
+      "rebirth": 0.3,
+      "transformation": 0.5
+    },
+    "metadata": {
+      "element": "Metal",
+      "polarity": "Yin",
+      "seasonal_association": "Autumn",
+      "confidence_level": 0.8,
+      "cultural_origin": "Traditional Chinese"
+    }
+  },
+  "Water Yang": {
+    "dimensions": {
+      "chaos": 0.5,
+      "rebirth": 0.9,
+      "transformation": 0.4
+    },
+    "metadata": {
+      "element": "Water",
+      "polarity": "Yang",
+      "seasonal_association": "Winter",
+      "confidence_level": 0.85,
+      "cultural_origin": "Traditional Chinese"
+    }
+  }
+}

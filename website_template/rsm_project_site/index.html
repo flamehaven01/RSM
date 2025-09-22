@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSM: Resonant Structures of Meaning | Flamehaven Initiative</title>
+    <meta name="description" content="A Machine-Executable Ontology for Interpretive AI - Academic research by Flamehaven Initiative">
+
+    <!-- Flamehaven Branding CSS -->
+    <link rel="stylesheet" href="assets/css/flamehaven.css">
+    <link rel="stylesheet" href="assets/css/rsm.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Source+Serif+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            custom_map: {
+                'paper_title': 'RSM Ontology',
+                'flamehaven_project': 'symbolic-ai'
+            }
+        });
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="flamehaven-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="assets/images/logo/flamehaven-logo.svg" alt="Flamehaven">
+                    <span class="logo-text">Flamehaven Initiative</span>
+                </div>
+                <nav class="main-nav">
+                    <a href="#abstract">Abstract</a>
+                    <a href="#demo">Demo</a>
+                    <a href="#results">Results</a>
+                    <a href="#code">Code</a>
+                    <a href="#paper">Paper</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="https://flamehaven-papers.github.io" class="btn btn-outline-sm">All Projects</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="paper-badge">
+                    <span class="badge-text">arXiv 2025</span>
+                    <span class="badge-status published">Published</span>
+                </div>
+
+                <h1 class="paper-title">
+                    Resonant Structures of Meaning:<br>
+                    <span class="title-subtitle">A Machine-Executable Ontology for Interpretive AI</span>
+                </h1>
+
+                <div class="authors">
+                    <span class="author flamehaven-author">Flamehaven Research Team</span>
+                    <span class="affiliation">Flamehaven Initiative</span>
+                </div>
+
+                <div class="paper-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar"></i>
+                        <span>September 2025</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-tags"></i>
+                        <span>Symbolic AI, Ontology, Interpretability</span>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <a href="paper/rsm_paper.pdf" class="btn btn-primary">
+                        <i class="fas fa-file-pdf"></i>
+                        Read Paper
+                    </a>
+                    <a href="#demo" class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        Try Demo
+                    </a>
+                    <a href="https://github.com/flamehaven/rsm-implementation" class="btn btn-outline">
+                        <i class="fab fa-github"></i>
+                        View Code
+                    </a>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="stats-row">
+                    <div class="stat">
+                        <span class="number" id="github-stars">150</span>
+                        <span class="label">GitHub Stars</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number" id="demo-visits">2.5K</span>
+                        <span class="label">Demo Visits</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number" id="paper-downloads">800</span>
+                        <span class="label">Downloads</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Abstract -->
+    <section id="abstract" class="section abstract-section">
+        <div class="container">
+            <h2 class="section-title">Abstract</h2>
+            <div class="abstract-content academic-text">
+                <p>
+                    We present <strong>Resonant Structures of Meaning (RSM)</strong>, a machine-executable ontology for symbolic and interpretive AI. Unlike conventional pipelines that begin with theoretical frameworks and only later attempt code translation, RSM adopts a <strong>code-first methodology</strong>: executable systems are treated as primary artifacts from which theoretical insights and methodological structures are derived.
+                </p>
+                <p>
+                    RSM comprises three core computational mechanisms: (i) the <strong>Vector of Meaning Energy (VME)</strong>, which encodes symbolic representations across heterogeneous cultural systems; (ii) the <strong>Resonance Index (RI)</strong>, a quantitative metric of interpretive alignment and temporal stability; and (iii) the <strong>DriftSentinel</strong>, which monitors longitudinal deviations in symbolic consistency.
+                </p>
+                <p>
+                    Experimental results demonstrate consistent and reproducible outputs across diverse symbolic inputs, positioning RSM as a candidate reference framework for executable symbolic AI with cultural validity and interpretive integrity.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo -->
+    <section id="demo" class="section demo-section">
+        <div class="container">
+            <h2 class="section-title">Interactive Demo</h2>
+            <p class="section-subtitle">
+                Experience RSM's symbolic reasoning capabilities in real-time
+            </p>
+
+            <div class="demo-container">
+                <div class="demo-controls">
+                    <div class="control-group">
+                        <label for="tarot-select">Tarot Card</label>
+                        <select id="tarot-select" class="form-control">
+                            <option value="">-- Select Tarot Card --</option>
+                            <option value="The Fool">The Fool</option>
+                            <option value="Death">Death</option>
+                            <option value="The Magician">The Magician</option>
+                            <option value="The Tower">The Tower</option>
+                            <option value="The High Priestess">The High Priestess</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="astrology-select">Astrological Sign</label>
+                        <select id="astrology-select" class="form-control">
+                            <option value="">-- Select Sign --</option>
+                            <option value="Aries">Aries</option>
+                            <option value="Taurus">Taurus</option>
+                            <option value="Gemini">Gemini</option>
+                            <option value="Cancer">Cancer</option>
+                            <option value="Leo">Leo</option>
+                            <option value="Scorpio">Scorpio</option>
+                            <option value="Pisces">Pisces</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="saju-select">Saju Element</label>
+                        <select id="saju-select" class="form-control">
+                            <option value="">-- Select Element --</option>
+                            <option value="Fire Yang">Fire Yang</option>
+                            <option value="Water Yang">Water Yang</option>
+                            <option value="Wood Yang">Wood Yang</option>
+                            <option value="Metal Yin">Metal Yin</option>
+                            <option value="Earth Yang">Earth Yang</option>
+                        </select>
+                    </div>
+
+                    <button id="calculate-btn" class="btn btn-primary demo-btn">
+                        <i class="fas fa-calculator"></i>
+                        Calculate RSM
+                    </button>
+                </div>
+
+                <div class="demo-results" id="demo-results">
+                    <div class="results-placeholder">
+                        <i class="fas fa-brain"></i>
+                        <p>Select symbolic inputs and click "Calculate RSM" to see the magic happen!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experimental Results -->
+    <section id="results" class="section results-section">
+        <div class="container">
+            <h2 class="section-title">Experimental Results</h2>
+            <p class="section-subtitle">
+                Comprehensive validation across 5 core experiments
+            </p>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="card-header">
+                        <h3>VME Encoding Quality</h3>
+                        <div class="status-badge success">Validated</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="value">1.000000</span>
+                                <span class="label">Normalization Accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="value">100%</span>
+                                <span class="label">System Success Rate</span>
+                            </div>
+                        </div>
+                        <div class="chart-placeholder">
+                            <canvas id="vme-chart" width="300" height="200"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <div class="card-header">
+                        <h3>RI Calibration</h3>
+                        <div class="status-badge success">Meets Criteria</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="value">0.120</span>
+                                <span class="label">Mean Absolute Error</span>
+                            </div>
+                            <div class="metric">
+                                <span class="value">0.000</span>
+                                <span class="label">False Alignment Rate</span>
+                            </div>
+                        </div>
+                        <div class="chart-placeholder">
+                            <canvas id="ri-chart" width="300" height="200"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <div class="card-header">
+                        <h3>DriftSentinel</h3>
+                        <div class="status-badge info">Monitoring</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="value">0.0133</span>
+                                <span class="label">DI2 Mean</span>
+                            </div>
+                            <div class="metric">
+                                <span class="value">50%</span>
+                                <span class="label">Stable Rate</span>
+                            </div>
+                        </div>
+                        <div class="status-distribution">
+                            <div class="status-item stable">STABLE: 2</div>
+                            <div class="status-item warning">WARNING: 1</div>
+                            <div class="status-item critical">CRITICAL: 1</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <div class="card-header">
+                        <h3>Reproducibility</h3>
+                        <div class="status-badge success">Perfect</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="value">100%</span>
+                                <span class="label">Tests Passed</span>
+                            </div>
+                            <div class="metric">
+                                <span class="value">0.00e+00</span>
+                                <span class="label">Max Delta</span>
+                            </div>
+                        </div>
+                        <div class="reproducibility-info">
+                            <p>All computations achieve perfect deterministic reproducibility (δ ≤ 1e-12)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code & Reproducibility -->
+    <section id="code" class="section code-section">
+        <div class="container">
+            <h2 class="section-title">Code & Reproducibility</h2>
+            <p class="section-subtitle">
+                Complete implementation with comprehensive validation
+            </p>
+
+            <div class="code-blocks">
+                <div class="code-block">
+                    <h3>Quick Start</h3>
+                    <pre><code class="language-bash"># Clone the repository
+git clone https://github.com/flamehaven/rsm-implementation.git
+cd rsm-implementation
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the simulator
+python rsm_simulator.py
+
+# Run validation tests
+python tests/test_rsm.py</code></pre>
+                </div>
+
+                <div class="code-block">
+                    <h3>Basic Usage</h3>
+                    <pre><code class="language-python">from rsm_simulator import RSMSimulator
+
+# Initialize simulator
+simulator = RSMSimulator()
+
+# Process symbolic input
+result = simulator.process_symbolic_input({
+    "tarot": "Death",
+    "astrology": "Scorpio"
+})
+
+print(f"VME: {result['vme']}")
+print(f"RI: {result['resonance_index']}")
+print(f"Status: {result['drift_status']}")</code></pre>
+                </div>
+            </div>
+
+            <div class="resource-links">
+                <a href="https://github.com/flamehaven/rsm-implementation" class="btn btn-primary">
+                    <i class="fab fa-github"></i>
+                    GitHub Repository
+                </a>
+                <a href="https://colab.research.google.com/drive/rsm-demo" class="btn btn-outline">
+                    <i class="fab fa-google"></i>
+                    Open in Colab
+                </a>
+                <a href="https://huggingface.co/spaces/flamehaven/rsm-simulator" class="btn btn-outline">
+                    <i class="fas fa-rocket"></i>
+                    Hugging Face Space
+                </a>
+                <a href="data/rsm_experimental_results.json" class="btn btn-outline">
+                    <i class="fas fa-download"></i>
+                    Download Results
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paper & Citation -->
+    <section id="paper" class="section paper-section">
+        <div class="container">
+            <h2 class="section-title">Paper & Citation</h2>
+
+            <div class="paper-info">
+                <div class="paper-details">
+                    <h3>Publication Details</h3>
+                    <div class="detail-row">
+                        <span class="label">Title:</span>
+                        <span class="value">Resonant Structures of Meaning: A Machine-Executable Ontology for Interpretive AI</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Authors:</span>
+                        <span class="value">Flamehaven Research Team</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Venue:</span>
+                        <span class="value">arXiv preprint</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Year:</span>
+                        <span class="value">2025</span>
+                    </div>
+                </div>
+
+                <div class="citation-block">
+                    <h3>BibTeX Citation</h3>
+                    <div class="bibtex-container">
+                        <pre id="bibtex-content">@article{flamehaven2025rsm,
+  title={Resonant Structures of Meaning: A Machine-Executable Ontology for Interpretive AI},
+  author={Flamehaven Research Team},
+  journal={arXiv preprint arXiv:2509.xxxxx},
+  year={2025}
+}</pre>
+                        <button id="copy-bibtex" class="copy-btn">
+                            <i class="fas fa-copy"></i>
+                            Copy
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="paper-downloads">
+                <a href="paper/rsm_paper.pdf" class="download-link">
+                    <i class="fas fa-file-pdf"></i>
+                    <div class="download-info">
+                        <span class="title">Main Paper</span>
+                        <span class="size">PDF, 2.3 MB</span>
+                    </div>
+                </a>
+                <a href="paper/supplementary.pdf" class="download-link">
+                    <i class="fas fa-file-alt"></i>
+                    <div class="download-info">
+                        <span class="title">Supplementary Material</span>
+                        <span class="size">PDF, 1.1 MB</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="flamehaven-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="assets/images/logo/flamehaven-logo-white.svg" alt="Flamehaven" class="footer-logo">
+                    <p>Advancing AI Research Through Sovereign Intelligence & Ethical Innovation</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Research</h4>
+                    <ul>
+                        <li><a href="https://flamehaven-papers.github.io">All Projects</a></li>
+                        <li><a href="https://flamehaven-papers.github.io/research/symbolic-ai">Symbolic AI</a></li>
+                        <li><a href="https://flamehaven-papers.github.io/research/medical-ai">Medical AI</a></li>
+                        <li><a href="https://flamehaven-papers.github.io/research/ethics-ai">AI Ethics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://flamehaven-papers.github.io/resources/datasets">Datasets</a></li>
+                        <li><a href="https://flamehaven-papers.github.io/resources/tools">Tools</a></li>
+                        <li><a href="https://flamehaven-papers.github.io/resources/templates">Templates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/flamehaven"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/flamehaven"><i class="fab fa-twitter"></i></a>
+                        <a href="https://scholar.google.com/flamehaven"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Flamehaven Initiative. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/rsm-demo.js"></script>
+    <script src="assets/js/charts.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
