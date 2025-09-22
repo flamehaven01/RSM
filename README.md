@@ -1,15 +1,15 @@
 # RSM Simulator v2.2
 ## Resonant Structures of Meaning: A Machine-Executable Ontology for Interpretive AI
 
-완전한 RSM 프레임워크 구현이 성공적으로 완료되었습니다.
+Complete RSM framework implementation has been successfully completed.
 
-### 구현 현황
-- **VME Engine**: Vector of Meaning Energy 계산 엔진 (완료)
-- **Resonance Index**: 해석적 정렬 측정 (완료)
-- **DriftSentinel**: 종적 안정성 모니터링 (완료)
-- **Symbolic Systems**: Tarot, Saju, Astrology 온톨로지 (완료)
+### Implementation Status
+- **VME Engine**: Vector of Meaning Energy calculation engine (Complete)
+- **Resonance Index**: Interpretive alignment measurement (Complete)
+- **DriftSentinel**: Longitudinal stability monitoring (Complete)
+- **Symbolic Systems**: Tarot, Saju, Astrology ontologies (Complete)
 
-### 검증 결과
+### Validation Results
 ```
 Tests run: 14
 Failures: 0
@@ -17,29 +17,41 @@ Errors: 0
 Success rate: 100.0%
 ```
 
-### 실행 방법
+### Usage
 ```bash
-# 기본 시뮬레이터 실행
+# Run basic simulator
 python rsm_simulator.py
 
-# 테스트 스위트 실행
+# Run test suite
 python tests/test_rsm.py
 ```
 
-### 핵심 기능
-1. **코드 우선 방법론**: 실행 가능한 시스템이 이론적 통찰의 주요 산출물
-2. **감사 추적**: 학술적 재현성을 위한 완전한 계산 기록
-3. **교차 문화 검증**: 이질적 상징 시스템 간 정렬 분석
-4. **드리프트 모니터링**: 해석적 일관성의 종적 편차 추적
+### Core Features
+1. **Code-First Methodology**: Executable systems as primary artifacts for theoretical insights
+2. **Audit Trails**: Complete computational records for academic reproducibility
+3. **Cross-Cultural Validation**: Alignment analysis across heterogeneous symbolic systems
+4. **Drift Monitoring**: Tracking longitudinal deviations in interpretive consistency
 
-### 구조
+### Structure
 ```
 RSM_Implementation/
-├── engine/          # 핵심 계산 엔진
-├── modal/           # 상징 시스템 온톨로지
-├── data/            # 상징 데이터베이스
-├── tests/           # 검증 테스트 스위트
-└── rsm_simulator.py # 메인 시뮬레이터
+├── engine/          # Core computational engines
+├── modal/           # Symbolic system ontologies
+├── data/            # Symbolic databases
+├── tests/           # Validation test suite
+└── rsm_simulator.py # Main simulator
 ```
 
-RSM 프레임워크는 해석적 AI의 재현성과 문화적 유효성을 보장하는 기계 실행 가능한 온톨로지로 작동합니다.
+The RSM framework operates as a machine-executable ontology ensuring reproducibility and cultural validity in interpretive AI.
+
+### Deployment and Access
+- **Hugging Face Space**: [https://huggingface.co/spaces/Flamehaven/rms-simulator](https://huggingface.co/spaces/Flamehaven/rms-simulator)
+- **Paper Version**: RSM v2.1 methodology, Simulator suite v2.2
+- **Implementation Version**: RSM Simulator v2.2 (current release)
+- **Git Tag**: v2.2 (version tagging for paper traceability)
+
+### Reproducibility Guarantees
+- Fixed random seed (`numpy.random.seed(42)`)
+- Deterministic computation (tolerance δ < 1e-12)
+- Complete audit trails (SHA-256 hashing)
+- Versioned dependencies and test harness
