@@ -9,13 +9,32 @@
 </p>
 
 <p align="center">
-  <a href="https://huggingface.co/spaces/Flamehaven/rms-simulator" target="_blank"><img src="https://img.shields.io/badge/Try%20Live-Demo-orange?logo=huggingface" alt="Hugging Face Demo"></a>
+  <a href="https://huggingface.co/spaces/Flamehaven/rsm-simulator" target="_blank"><img src="https://img.shields.io/badge/Try%20Live-Demo-orange?logo=huggingface" alt="Hugging Face Demo"></a>
   <a href="https://colab.research.google.com/" target="_blank"><img src="https://img.shields.io/badge/Open%20in-Colab-blue?logo=googlecolab" alt="Open In Colab"></a>
   <img src="https://img.shields.io/badge/python-3.10+-blue.svg" alt="Python Version">
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
 </p>
 
 > 🔮 *From cultural symbols to reproducible computation — bridging meaning with code.*
+
+---
+
+## 📜 Research Paper & Abstract
+
+This repository contains the complete source code, data, and validation harnesses for the research paper, "Resonant Structures of Meaning: A Machine-Executable Ontology for Interpretive AI."
+
+![Screenshot of the Paper](docs/images/Paper_screenshot.png)
+
+**Abstract:** This paper introduces Resonant Structures of Meaning (RSM), a machine-executable ontology for symbolic and interpretive AI. Unlike conventional pipelines that begin with theoretical frameworks and only later attempt code translation, RSM adopts a **code-first methodology**: executable systems serve as primary research artifacts from which theoretical insights and methodological structures are derived. 
+
+---
+
+## 🎮 Live Demo & Showcase
+
+👉 [**Live Demo on Hugging Face Spaces**](https://huggingface.co/spaces/Flamehaven/rsm-simulator)  
+*Run RSM in your browser — no installation required!* 
+
+![RSM Simulator Demo](docs/images/rsm_demo_screenshot.png)
 
 ---
 
@@ -29,24 +48,6 @@
 <p align="center">
   <img src="docs/images/rsm_pipeline.png" width="600"/>
 </p>
-
----
-
-## Showcase & Example
-
-Below is a screenshot of the live simulator and an example of its input/output.
-
-![RSM Simulator Demo](docs/images/rsm_demo_screenshot.webp)
-
-Provide a simple JSON to the simulator:
-```json
-{"tarot": "The Tower", "saju": "Fire Yang"}
-```
-
-And get a detailed analysis back:
-```
-➡️ RI = 0.812 | DriftSentinel: Stable | Overall Confidence: 0.9
-```
 
 ---
 
@@ -100,7 +101,7 @@ And get a detailed analysis back:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/YourUsername/rsm-ontology.git
+    git clone https://github.com/Flamehaven/rsm-ontology.git
     cd rsm-ontology
     ```
 
