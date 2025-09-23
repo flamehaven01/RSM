@@ -15,7 +15,7 @@ def sync_github_to_hf():
     print("[>] Starting GitHub → HF sync process...")
 
     # Paths
-    github_demo_path = Path("D:/Sanctum/RSM_Implementation/huggingface_deployment")
+    github_demo_path = Path("D:/Sanctum/Resonant Structures of Meaning A Machine-Executable Ontology for Interpretive AI/huggingface_deployment")
     hf_clone_path = Path("D:/Sanctum/rms-simulator")
 
     # Files to sync

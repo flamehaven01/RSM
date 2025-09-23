@@ -33,8 +33,7 @@ class SimpleVMEEngine:
                 "Death": {"chaos": 0.7, "rebirth": 1.0, "transformation": 1.0, "confidence": 0.95},
                 "The Magician": {"chaos": 0.3, "rebirth": 0.6, "transformation": 0.9, "confidence": 0.9},
                 "The Tower": {"chaos": 1.0, "rebirth": 0.7, "transformation": 0.8, "confidence": 0.9},
-                "The High Priestess": {"chaos": 0.2, "rebirth": 0.8, "transformation": 0.6, "confidence": 0.8},
-                "The Void": {"chaos": 0.1, "rebirth": 0.1, "transformation": 0.1, "confidence": 0.4}
+                "The High Priestess": {"chaos": 0.2, "rebirth": 0.8, "transformation": 0.6, "confidence": 0.8}
             },
             "astrology": {
                 "Aries": {"chaos": 0.9, "rebirth": 0.8, "transformation": 0.7, "confidence": 0.85},
@@ -43,14 +42,13 @@ class SimpleVMEEngine:
                 "Cancer": {"chaos": 0.4, "rebirth": 0.9, "transformation": 0.6, "confidence": 0.8},
                 "Leo": {"chaos": 0.6, "rebirth": 0.7, "transformation": 0.8, "confidence": 0.85},
                 "Scorpio": {"chaos": 0.8, "rebirth": 1.0, "transformation": 1.0, "confidence": 0.9},
-                "Pisces": {"chaos": 0.5, "rebirth": 0.8, "transformation": 0.7, "confidence": 0.7},
-                "Malefic Star": {"chaos": 1.0, "rebirth": 0.1, "transformation": 0.2, "confidence": 0.6}
+                "Pisces": {"chaos": 0.5, "rebirth": 0.8, "transformation": 0.7, "confidence": 0.7}
             },
             "saju": {
                 "Fire Yang": {"chaos": 0.8, "rebirth": 0.6, "transformation": 0.9, "confidence": 0.9},
                 "Water Yang": {"chaos": 0.5, "rebirth": 0.9, "transformation": 0.4, "confidence": 0.85},
                 "Wood Yang": {"chaos": 0.4, "rebirth": 0.8, "transformation": 0.7, "confidence": 0.85},
-                "Metal Yin": {"chaos": 0.2, "rebirth": 0.1, "transformation": 0.2, "confidence": 0.7},
+                "Metal Yin": {"chaos": 0.3, "rebirth": 0.3, "transformation": 0.5, "confidence": 0.8},
                 "Earth Yang": {"chaos": 0.2, "rebirth": 0.4, "transformation": 0.3, "confidence": 0.8}
             }
         }
@@ -281,7 +279,7 @@ def create_ri_trend_plot() -> go.Figure:
                   annotation_text="Excellent Harmony", annotation_position="top right")
     fig.add_hrect(y0=60, y1=80, fillcolor="lightyellow", opacity=0.2,
                   annotation_text="Good Alignment", annotation_position="top right")
-    fig.add_hrect(y0=40, y1=60, fillcolor="orange", opacity=0.2,
+    fig.add_hrect(y0=40, y1=60, fillcolor="lightorange", opacity=0.2,
                   annotation_text="Mixed Energies", annotation_position="top right")
     fig.add_hrect(y0=0, y1=40, fillcolor="lightcoral", opacity=0.2,
                   annotation_text="Challenging", annotation_position="top right")
@@ -449,16 +447,93 @@ def create_interface():
     with gr.Blocks(
         title="RSM Simulator - Resonant Structures of Meaning",
         theme=gr.themes.Default(),
-        css="style.css"
+        css="""
+        .gradio-container {
+            max-width: 1200px !important;
+            margin: 0 auto !important;
+        }
+        .main-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .result-box {
+            border: 2px solid #e1e5e9;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            background: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .metric-display {
+            font-family: 'Courier New', monospace;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .status-display {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 0.5rem;
+            border-radius: 8px;
+        }
+        .gr-button {
+            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%) !important;
+            color: white !important;
+            border: none !important;
+            border-radius: 8px !important;
+            font-weight: bold !important;
+            padding: 0.75rem 1.5rem !important;
+            font-size: 14px !important;
+        }
+        .gr-dropdown, .gr-dropdown-container {
+            border-radius: 8px !important;
+        }
+        .gr-dropdown select {
+            font-size: 14px !important;
+            padding: 8px 12px !important;
+            background-size: 12px !important;
+        }
+        .gr-textbox {
+            border-radius: 8px !important;
+        }
+        .gr-textbox input, .gr-textbox textarea {
+            font-size: 14px !important;
+            padding: 8px 12px !important;
+        }
+        /* Fix oversized icons and arrows */
+        .gr-form > div > div > div > label {
+            font-size: 14px !important;
+        }
+        .gr-dropdown:after {
+            width: 12px !important;
+            height: 12px !important;
+        }
+        /* Normalize component sizes */
+        .gr-block {
+            font-size: 14px !important;
+        }
+        .gr-markdown {
+            font-size: 14px !important;
+        }
+        .gr-markdown h1 { font-size: 24px !important; }
+        .gr-markdown h2 { font-size: 20px !important; }
+        .gr-markdown h3 { font-size: 18px !important; }
+        .gr-markdown h4 { font-size: 16px !important; }
+        /* Fix plot component sizes */
+        .gr-plot {
+            max-height: 400px !important;
+        }
+        h1, h2, h3 { color: #2c3e50 !important; }
+        """
     ) as iface:
 
         gr.HTML("""
-        <div style="text-align: center;">
-            <h1 style="color: white; font-size: 2.5em; margin-bottom: 0.5rem;">🔮 RSM Simulator</h1>
-            <h2 style="color: #f0f0f0; font-size: 1.5em; margin-bottom: 1rem;">Discover How Cultural Symbols Resonate Together</h2>
-            <p style="color: #d0d0d0; font-size: 1.1em; margin-bottom: 1rem;"><strong>Academic Research Demo</strong> | Explore the harmony between Tarot, Astrology, and Korean Saju</p>
-            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; border-radius: 10px; margin: 20px auto 60px auto; max-width: 700px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); font-size: 1.1em;">
-                <strong style="font-size: 1.2em;">💡 How to use:</strong> Select symbols from different traditions below and watch how they interact!
+        <div class="main-header">
+            <h1 style="color: #2c3e50; font-size: 2.5em; margin-bottom: 0.5rem;">🔮 RSM Simulator</h1>
+            <h2 style="color: #34495e; font-size: 1.5em; margin-bottom: 1rem;">Discover How Cultural Symbols Resonate Together</h2>
+            <p style="color: #7f8c8d; font-size: 1.1em; margin-bottom: 1rem;"><strong>Academic Research Demo</strong> | Explore the harmony between Tarot, Astrology, and Korean Saju</p>
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; border-radius: 10px; margin: 15px auto; max-width: 700px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                <strong style="font-size: 1.1em;">💡 How to use:</strong> Select symbols from different traditions below and watch how they interact!
                 Higher harmony scores mean your symbols work well together across cultures.
             </div>
         </div>
@@ -476,7 +551,7 @@ def create_interface():
                 )
 
                 astrology_input = gr.Dropdown(
-                    choices=["None", "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Scorpio", "Pisces", "Malefic Star"],
+                    choices=["None", "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Scorpio", "Pisces"],
                     value="None",
                     label="⭐ Zodiac Sign (Celestial Influences)",
                     info="Aries: Leadership • Taurus: Stability • Gemini: Communication • Cancer: Nurturing • Leo: Creativity • Scorpio: Intensity • Pisces: Intuition"
@@ -514,7 +589,7 @@ def create_interface():
 
                 interpretation_output = gr.Markdown(
                     value="Select symbolic inputs and click 'Calculate RSM' to begin analysis.",
-
+                    elem_classes=["result-box"]
                 )
 
                 with gr.Row():
@@ -599,7 +674,7 @@ def create_interface():
             )
 
         gr.HTML("""
-        <div style="text-align: center; margin-top: 2rem; padding: 1rem; background: #27272A; border-radius: 8px; color: white;">
+        <div style="text-align: center; margin-top: 2rem; padding: 1rem; background: #f5f5f5; border-radius: 8px;">
             <h3>🎓 Understanding Your Results</h3>
             <div style="text-align: left; max-width: 800px; margin: 0 auto;">
                 <h4>🔍 Quick Guide:</h4>

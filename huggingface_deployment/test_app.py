@@ -15,7 +15,7 @@ def test_basic_functionality():
 
     # Test 2: Single Tarot input
     result = process_rsm_input("The Fool", "None", "None")
-    interpretation, vme_display, ri_display, confidence, systems, status = result
+    interpretation, vme_display, ri_display, confidence, systems, status, _, _, _ = result
     print(f"[+] Single Tarot test:")
     print(f"   VME: {vme_display}")
     print(f"   RI: {ri_display}")
@@ -23,7 +23,7 @@ def test_basic_functionality():
 
     # Test 3: Multiple inputs
     result = process_rsm_input("Death", "Scorpio", "Fire Yang")
-    interpretation, vme_display, ri_display, confidence, systems, status = result
+    interpretation, vme_display, ri_display, confidence, systems, status, _, _, _ = result
     print(f"[+] Multiple inputs test:")
     print(f"   Systems: {systems}")
     print(f"   RI: {ri_display}")
